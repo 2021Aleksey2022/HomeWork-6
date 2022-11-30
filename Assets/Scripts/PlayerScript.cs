@@ -22,5 +22,11 @@ public class PlayerScript : MonoBehaviour
             key = true;
             other.gameObject.SetActive(false);
         }
+        if (other.tag.Equals("Bomb"))
+        {
+            Debug.Log("Boom!");
+            other.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
 }
