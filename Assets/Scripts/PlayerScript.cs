@@ -32,6 +32,10 @@ public class PlayerScript : MonoBehaviour
             other.gameObject.SetActive(false);
             gameObject.SetActive(false);
         }
+        if (other.gameObject.tag.Equals("XP"))
+        {
+            other.gameObject.SetActive(false);
+        }
     }
  
 }
